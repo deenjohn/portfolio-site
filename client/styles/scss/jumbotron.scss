@@ -1,0 +1,39 @@
+
+.jumbotron {
+  min-height:425px;
+  border-bottom:$primary-border;
+
+  .intro-text {
+    width:50%;
+    max-width:550px;
+    min-width:275px;
+    text-align:left;
+    margin:50px auto 0 auto;
+    padding:10px;
+    padding-left:50px;
+  }
+
+  h1 {
+    font-size:5em;
+    text-align:left;
+    padding:15px 0;
+    margin:0;
+  }
+
+  h2 {
+    font-size:1.75em;
+    width:100%;
+  }
+
+  li {
+    display:inline-block;
+    margin:5px 20px;
+  }
+
+  .logo {
+    width:50px;
+    height:auto;
+    margin-bottom:-10px;
+    margin-right:-10px;
+  }
+}

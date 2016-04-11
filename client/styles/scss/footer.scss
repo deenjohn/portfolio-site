@@ -1,0 +1,30 @@
+
+footer {
+  width:100%;
+  text-align:center;
+  margin-bottom:15px;
+
+  li {
+    display:inline-block;
+    cursor:pointer;
+    margin:5px 10px;
+  }
+  a {
+    display:block;
+    width: 100%;
+    font-size: 1.3em;
+  }
+  .social-media img {
+    display:inline-block;
+    width:25px;
+    height:auto;
+  }
+
+  span {
+    display:block;
+    padding:0;
+    margin:0;
+    font-size:1.2em;
+    padding-bottom:3px;
+  }
+}

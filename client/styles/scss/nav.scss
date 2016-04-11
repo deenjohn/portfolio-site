@@ -1,0 +1,21 @@
+
+.nav {
+  display: block;
+  font-size:1.75em;
+  padding-top:10px;
+  text-align: center;
+  // background-color: blue;
+  // border:1px solid $accent-color-2;
+
+
+  a {
+    font-family: $font-accent;
+    font-size:1.2em;
+    color:#000;
+  }
+
+  .logo {
+    display: inline-block;
+    width:75px;
+  }
+}

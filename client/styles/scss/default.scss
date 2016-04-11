@@ -1,0 +1,66 @@
+/* Overrides default styles */
+
+/* font families */
+$font-primary: 'EB Garamond', sans-serif;
+$font-accent: 'Dancing Script', cursive;
+/* color scheme */
+$accent-color: #ff3836;
+$accent-color-2: #e2e2e2;
+/* borders */
+$primary-border: 1px solid #000;
+$accent-border: 1px solid $accent-color-2;
+/* headers */
+$font-size: 62.5%;
+$h2-size: 2.5em;
+$h3-size: 1.7em;
+
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family:$font-primary;
+  font-size: $font-size;
+  height:100%;
+  margin:0;
+  padding:0;
+}
+
+h1 {
+  font-family:$font-accent;
+}
+
+p, a {
+  font-family: $font-primary;
+  font-size:1em;
+  color:#000;
+}
+
+a {
+  width:100%;
+  text-decoration:none;
+}
+
+button {
+  font-family: $font-primary;
+  border: $primary-border;
+  background-color: #fff;
+  font-color:#fff;
+  border-radius:0;
+}
+
+.strong {
+  font-weight:bold;
+}
+
+.clearfix:after {
+   content: ".";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
