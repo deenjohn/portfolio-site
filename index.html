@@ -1,16 +1,31 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <link href='https://fonts.googleapis.com/css?family=Dancing+Script|EB+Garamond' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="
-https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
-    <link rel="stylesheet" type="text/css" href="styles/css/main.css">
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <link href='https://fonts.googleapis.com/css?family=Dancing+Script|EB+Garamond' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" type="text/css" href="
+  https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+      <link rel="stylesheet" type="text/css" href="client/styles/css/main.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.runtime.min.js"></script>
+      <script src="./client/js/templates/templates.js"></script>
 
-    <title>Portfolio Site</title>
-  </head>
-  <body>
-    <div id="main"></div>
-    <script src="./client/main.js"></script>
-  </body>
-</html>
+      <title>Portfolio Site</title>
+    </head>
+    <body>
+      <div class="jumbotron">
+        <div class="nav"></div>
+        <div class="intro-text">
+          <h1>Hello there.</h1>
+          <h2>I’m Melinda. I am a software engineer based in Los Angeles, CA. I am currently working as an instructor at <a href="http://www.makersquare.com">MakerSquare</a>.I build neat things in Javascript.</h2>
+        </div>
+      </div>
+      <div class="footer"><div>
+      <script>
+        var footer = Handlebars.templates['footer.tmpl'];
+        var nav = Handlebars.templates['nav.tmpl'];
+        $('.footer').html(footer);
+        $('.nav').html(nav);
+      </script>
+    </body>
+  </html>
